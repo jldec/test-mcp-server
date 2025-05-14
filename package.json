@@ -1,0 +1,31 @@
+{
+  "name": "test-mcp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "ship": "wrangler deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.2",
+    "agents": "^0.0.85",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250513.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.14.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all",
+    "useTabs": false,
+    "tabWidth": 2,
+    "printWidth": 100
+  }
+}
