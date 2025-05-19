@@ -1,6 +1,6 @@
 name = "test-mcp-server"
 main = "./worker.ts"
-compatibility_date = "2025-05-13"
+compatibility_date = "2025-05-07"
 compatibility_flags = ["nodejs_compat"]
 
 [[durable_objects.bindings]]
