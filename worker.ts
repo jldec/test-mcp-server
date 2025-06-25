@@ -50,8 +50,12 @@ export default {
       return TestMcpAgent.serveSSE('/sse').fetch(request, env, ctx)
     }
 
-    if (path === '/streamable-http') {
-      return TestMcpAgent.serve('/streamable-http').fetch(request, env, ctx)
+    if (path === '/mcp') {
+      const response = await TestMcpAgent.serve('/mcp').fetch(request, env, ctx)
+      response.headers.set('Access-Control-Allow-Origin', '*')
+      response.headers.set('Access-Control-Allow-Headers', 'Content-Type, mcp-session-id')
+      response.headers.set('Access-Control-Expose-Headers', 'mcp-session-id')
+      return response
     }
 
     if (path === '/greet') {

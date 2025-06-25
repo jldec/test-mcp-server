@@ -11,14 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.11.2",
-    "agents": "^0.0.85",
-    "zod": "^3.24.4"
+    "@modelcontextprotocol/sdk": "^1.13.1",
+    "agents": "^0.0.98",
+    "zod": "^3.25.67"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250513.0",
+    "@cloudflare/workers-types": "^4.20250620.0",
     "typescript": "^5.8.3",
-    "wrangler": "^4.14.4"
+    "wrangler": "^4.21.2"
   },
   "prettier": {
     "singleQuote": true,
